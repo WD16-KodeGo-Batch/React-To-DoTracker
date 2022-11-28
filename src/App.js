@@ -7,7 +7,7 @@ import Tasks from './components/Tasks'
 
 const App = () => {
   
-const [tasks, setTask] = useState([
+const [tasks, setTasks] = useState([
   {
       id:1,
       text: 'Web dev work',
@@ -32,13 +32,16 @@ const [tasks, setTask] = useState([
   const deleteTask = (id) =>{
    /*  alert('delete task event')
     console.log('This is a delete task', id); */
-    setTask(tasks.filter((task)=>task.id !== id))
+    setTasks(tasks.filter((task)=>task.id !== id))
   }
 
 // TOGGLE TASK 
 
 const toggleActive = (id) => {
-  console.log(id);
+  // console.log(id);
+  setTasks(tasks.map((task)=>task.id === id ?
+  {...task, reminder : !task.reminder } : task
+  ))
 }
 
   return (
