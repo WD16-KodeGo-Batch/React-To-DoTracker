@@ -1,0 +1,76 @@
+/* Color Palette
+#A0E7E5 Tiffany blue
+#B4F8C8 Mint
+#FFAEBC hot pink
+#FBE7C6 Yellow
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+  margin-bottom: border-box;
+  margin:0;
+  padding:0;
+}
+
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FFAEBC
+}
+
+.container{
+  margin: 30px auto;
+  min-height: 300px;
+  max-width: 400px;
+  overflow: auto;
+  border:2px solid rgb(11, 71, 120);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #FBE7C6;
+  box-shadow: 0px 13px 30px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 13px 30px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 30px -1px rgba(0,0,0,0.75);
+
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:20px;
+}
+
+.btn{
+  display:inline-block;
+  background-color:rgb(21, 21, 148);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px; 
+  font-family:inherit;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn:active{
+  transform:scale(1.03);
+}
+
+.btn--block{
+  display: block;
+  width: 100%;
+}
+
+.task{
+  background: #B4F8C8;
+  margin: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
