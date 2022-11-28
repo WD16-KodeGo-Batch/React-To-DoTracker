@@ -78,3 +78,37 @@ body{
   border-left: 10px solid rgb(6,73,6);
 }
 
+.form--add{
+  margin-bottom: 40px;
+}
+
+.form__controller{
+  margin: 20px 0;
+}
+
+.form__label{
+  display: block;
+}
+
+.form__input{
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form__controller--check{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__label--check{
+  flex:1;
+}
+
+.form__input--check{
+  flex:2;
+  height: 20px;
+}

@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 //import {useState} from 'react'
 import Header from './components/Header';
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
 
 const App = () => {
   
@@ -47,6 +48,7 @@ const toggleActive = (id) => {
   return (
     <div className='container'> 
       <Header />
+      <AddTask />
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> : 'No tasks to accomplish'}
       {/* <h1 style={{textAlign:'center'}}>HELLO WORLD! This is my first REACT APP</h1> */}
     </div>
