@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-To-DoTracker/static/css/main.6196bcf0.css",
+    "main.js": "/React-To-DoTracker/static/js/main.64b689ec.js",
+    "static/js/787.e7215f44.chunk.js": "/React-To-DoTracker/static/js/787.e7215f44.chunk.js",
+    "index.html": "/React-To-DoTracker/index.html",
+    "main.6196bcf0.css.map": "/React-To-DoTracker/static/css/main.6196bcf0.css.map",
+    "main.64b689ec.js.map": "/React-To-DoTracker/static/js/main.64b689ec.js.map",
+    "787.e7215f44.chunk.js.map": "/React-To-DoTracker/static/js/787.e7215f44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6196bcf0.css",
+    "static/js/main.64b689ec.js"
+  ]
+}
