@@ -7,6 +7,7 @@ import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 
 const App = () => {
+  const [showAddTask, setShowAddTask] = useState(false)
   
 const [tasks, setTasks] = useState([
   {
@@ -55,8 +56,8 @@ const toggleActive = (id) => {
 
   return (
     <div className='container'> 
-      <Header />
-      <AddTask onAdd={addTask} />
+      <Header onAdd={()=>setShowAddTask(!showAddTask)} />
+      {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> : 'No tasks to accomplish'}
       {/* <h1 style={{textAlign:'center'}}>HELLO WORLD! This is my first REACT APP</h1> */}
     </div>
