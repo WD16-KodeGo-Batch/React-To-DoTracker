@@ -3,14 +3,16 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 
 // Second exmple DESTRUCTURING and overriding using the .defaultProps
-const Header = ({title, onAdd}) => {
+const Header = ({title, onAdd, showAdd}) => {
   /* const onClick = () => {
     console.log('Test event object')
     alert('Test alert for an onClick event')
   }  */
   return (
     <header className='header'>
-      <Button text='Add' color='green' onClick={onAdd} />
+      <Button text={showAdd ? 'Close' : 'Show'} color={showAdd ? 'red' : 'green'} onClick={onAdd} />
+     
+     
       {/* <Button text='Add' color='green' onClick={onClick} /> */}
       {/* <Button text='Del' color='red' /> */}
       
